@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Book your next nail appointment with Clawed By Brown. View nail services, prices, available dates and time slots.">
+<title>Clawed By Brown | Nails by Brown</title>
+<style>
+:root{--coffee:#6d574e;--deep:#4c3b35;--taupe:#a18b80;--cream:#f5e9e4;--pink:#e6d0c9;--white:#fffaf7;--line:#d9c4bc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--white);color:var(--deep);font-family:Georgia,"Times New Roman",serif;line-height:1.6}
+a{color:inherit}.topbar{background:var(--deep);color:var(--cream);padding:10px 5%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:12px Arial,sans-serif;letter-spacing:1.3px}
+header{position:sticky;top:0;z-index:5;background:rgba(255,250,247,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1150px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-size:23px;letter-spacing:3px;text-decoration:none}.brand span{display:block;font-size:11px;letter-spacing:4px;font-style:italic;text-align:center}.navlinks{display:flex;gap:22px;align-items:center;font:13px Arial,sans-serif}.navlinks a{text-decoration:none}.navlinks a:hover{text-decoration:underline}.pill{display:inline-block;background:var(--coffee);color:white;padding:11px 20px;border-radius:30px;text-decoration:none;border:0;cursor:pointer;font:12px Arial,sans-serif;letter-spacing:1px}.hero{background:linear-gradient(90deg,rgba(64,47,41,.76),rgba(64,47,41,.2)),url('images/clawed-by-brown-menu.jpeg') center 38%/cover;min-height:530px;display:flex;align-items:center;color:#fff7f3}.hero-inner{max-width:1150px;width:100%;margin:auto;padding:70px 7%}.eyebrow{text-transform:uppercase;letter-spacing:4px;font:11px Arial,sans-serif}.hero h1{font-size:clamp(43px,7vw,82px);font-weight:400;line-height:1.02;margin:15px 0}.script{font-style:italic;font-size:clamp(24px,3vw,36px)}.hero p{max-width:460px}.hero .pill{background:var(--pink);color:var(--deep);margin-top:14px}.section{padding:76px 22px}.wrap{max-width:1100px;margin:auto}.section-heading{text-align:center;margin-bottom:35px}.section-heading .eyebrow{color:var(--taupe)}h2{font-size:clamp(30px,4vw,45px);font-weight:400;margin:6px 0 10px}.section-heading p{max-width:620px;margin:0 auto;color:#79675f}.intro{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.intro-image{width:100%;max-height:540px;object-fit:cover;object-position:center;border-radius:4px;box-shadow:16px 16px 0 var(--pink)}.intro h2{font-size:42px}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{border:1px solid var(--line);border-radius:16px;padding:24px;background:#fffdfb}.service-card h3{font-weight:400;font-size:20px;text-align:center;letter-spacing:2px;background:var(--pink);border-radius:30px;padding:7px;margin:0 0 18px}.price-row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #eee3df}.price-row:last-child{border:0}.price-row span:last-child{white-space:nowrap}.booking{background:#eee1db}.booking-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:start}.booking-note{background:var(--coffee);color:#fff5f0;padding:30px;border-radius:16px}.booking-note h3{font-size:27px;font-weight:400;margin-top:0}.booking-note img{width:100%;max-height:290px;object-fit:cover;border-radius:10px;margin-top:14px}.booking-form{background:var(--white);padding:30px;border-radius:16px;box-shadow:0 12px 40px #5d453512}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font:12px Arial,sans-serif;letter-spacing:.7px}input,select,textarea{width:100%;border:1px solid #d7c4bc;border-radius:8px;background:#fff;padding:13px;color:var(--deep);font:15px Arial,sans-serif}input:focus,select:focus,textarea:focus{outline:2px solid var(--taupe);outline-offset:1px}.slots{display:flex;flex-wrap:wrap;gap:8px;margin-top:7px}.slot{background:#fff;border:1px solid var(--line);color:var(--deep);padding:9px 12px;border-radius:20px;cursor:pointer;font:12px Arial,sans-serif}.slot.selected{background:var(--coffee);color:white;border-color:var(--coffee)}.slot:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}.total{background:var(--cream);padding:12px 15px;border-radius:8px;display:flex;justify-content:space-between;align-items:center}.notice{font:12px Arial,sans-serif;color:#806c63}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px}.gallery img{width:100%;height:330px;object-fit:cover;border-radius:10px}.gallery img:nth-child(2){object-position:center 30%}.contact{background:var(--deep);color:var(--cream);text-align:center;padding:60px 20px}.contact h2{font-size:38px}.contact a{color:var(--cream)}footer{background:#3b2d28;color:#cbb6ad;text-align:center;padding:20px;font:11px Arial,sans-serif;letter-spacing:1px}.mobile-menu{display:none}
+@media(max-width:800px){.navlinks{gap:12px}.navlinks a:not(.pill){display:none}.hero{min-height:470px}.intro,.booking-layout{grid-template-columns:1fr}.intro-image{max-height:400px}.service-grid{grid-template-columns:1fr}.gallery img{height:240px}.section{padding:55px 18px}}
+@media(max-width:480px){.topbar{justify-content:center;text-align:center}.brand{font-size:17px;letter-spacing:2px}.nav{padding:12px}.navlinks .pill{padding:10px 12px}.hero-inner{padding:55px 24px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.booking-form{padding:20px}.gallery{grid-template-columns:1fr}.gallery img{height:300px}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>PRETTY NAILS ✦ GOOD VIBES ✦ ALWAYS</span><span>BOOKINGS: 064 312 3054</span></div>
+<header><nav class="nav">
+<a class="brand" href="#home">CLAWED BY BROWN<span>Nails by Brown ♡</span></a>
+<div class="navlinks"><a href="#services">Services & prices</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a><a class="pill" href="#booking">BOOK NOW</a></div>
+</nav></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<div class="eyebrow">Your self-care moment starts here</div>
+<h1>Clawed<br>By Brown</h1><div class="script">Nails by Brown ♡</div>
+<p>Beautiful nails, thoughtful details and a little time just for you. Choose your service, pick an available date and request your appointment.</p>
+<a class="pill" href="#booking">BOOK YOUR SET ↗</a>
+</div></section>
+
+<section class="section"><div class="wrap intro">
+<div><div class="eyebrow">Welcome to your nail era</div><h2>Pretty nails.<br>Good vibes. Always.</h2><p>Welcome to Clawed By Brown, your little corner for fresh sets, clean finishes and feel-good nail care. Browse the menu and use the booking form to request a date and time.</p><p><strong>Appointments are confirmed personally</strong> so we can make sure your selected slot is available.</p><a class="pill" href="#services">EXPLORE THE MENU</a></div>
+<img class="intro-image" src="images/clawed-by-brown-menu.jpeg" alt="Clawed By Brown nail services and price menu">
+</div></section>
+
+<section class="section" id="services" style="background:#f7efeb"><div class="wrap">
+<div class="section-heading"><div class="eyebrow">The menu</div><h2>Services & prices</h2><p>Choose your favourite service. Prices are in South African rand (R).</p></div>
+<div class="service-grid">
+<div class="service-card"><h3>MANICURE</h3>
+<div class="price-row"><span>Plain set</span><span>R110</span></div><div class="price-row"><span>Short</span><span>R110</span></div><div class="price-row"><span>Medium</span><span>R130</span></div><div class="price-row"><span>Long</span><span>R150</span></div><br><strong>Design set</strong><div class="price-row"><span>Short</span><span>R150</span></div><div class="price-row"><span>Medium</span><span>R180</span></div><div class="price-row"><span>Long</span><span>R200</span></div></div>
+<div class="service-card"><h3>PEDICURE</h3><div class="price-row"><span>Plain gel</span><span>R70</span></div><div class="price-row"><span>Plain acrylic</span><span>R90</span></div><div class="price-row"><span>French design</span><span>R110</span></div><h3 style="margin-top:24px">OTHER SERVICES</h3><div class="price-row"><span>Cluster lashes</span><span>R80</span></div><div class="price-row"><span>Buff & shine (plain)</span><span>R70</span></div><div class="price-row"><span>Buff & shine (with art)</span><span>R80</span></div><div class="price-row"><span>Soak off</span><span>R50</span></div><div class="price-row"><span>Kids gel (hands)</span><span>R60</span></div><div class="price-row"><span>Kids gel (toes)</span><span>R70</span></div></div>
+<div class="service-card"><h3>BOOKING DETAILS</h3><p>Appointments are requested through WhatsApp. Choose your service, date and time below, then send your request.</p><div class="price-row"><span>Booking contact</span><strong>064 312 3054</strong></div><div class="price-row"><span>Also available</span><strong>064 312 3054</strong></div><p class="notice">Please wait for a reply to confirm your appointment.</p><a class="pill" href="#booking">CHOOSE A TIME</a></div>
+</div></div></section>
+
+<section class="section booking" id="booking"><div class="wrap">
+<div class="section-heading"><div class="eyebrow">Make it official</div><h2>Request an appointment</h2><p>Select a service, date and time. Your request will open in WhatsApp for you to send.</p></div>
+<div class="booking-layout"><aside class="booking-note"><h3>Let's get you booked ♡</h3><p>Choose an available time below. The times shown are example availability and can be edited in this website's HTML file.</p><p><strong>WhatsApp</strong><br>064 312 3054</p><p><strong>Alternative contact</strong><br>064 312 3054</p><img src="images/clawed-by-brown-menu.jpeg" alt="Clawed By Brown price list"></aside>
+<form class="booking-form" id="bookingForm">
+<div class="form-grid">
+<div class="field full"><label for="service">SELECT YOUR SERVICE *</label><select id="service" required><option value="">Choose a service</option>
+<option value="Plain set manicure" data-price="110">Plain set manicure — R110</option><option value="Short manicure" data-price="110">Short manicure — R110</option><option value="Medium manicure" data-price="130">Medium manicure — R130</option><option value="Long manicure" data-price="150">Long manicure — R150</option><option value="Design set - short" data-price="150">Design set - short — R150</option><option value="Design set - medium" data-price="180">Design set - medium — R180</option><option value="Design set - long" data-price="200">Design set - long — R200</option><option value="Plain gel pedicure" data-price="70">Plain gel pedicure — R70</option><option value="Plain acrylic pedicure" data-price="90">Plain acrylic pedicure — R90</option><option value="French design pedicure" data-price="110">French design pedicure — R110</option><option value="Cluster lashes" data-price="80">Cluster lashes — R80</option><option value="Buff & shine (plain)" data-price="70">Buff & shine (plain) — R70</option><option value="Buff & shine (with art)" data-price="80">Buff & shine (with art) — R80</option><option value="Soak off" data-price="50">Soak off — R50</option><option value="Kids gel (hands)" data-price="60">Kids gel (hands) — R60</option><option value="Kids gel (toes)" data-price="70">Kids gel (toes) — R70</option></select></div>
+<div class="field"><label for="date">PREFERRED DATE *</label><input type="date" id="date" required></div>
+<div class="field"><label for="name">YOUR NAME *</label><input type="text" id="name" placeholder="Full name" required></div>
+<div class="field full"><label>AVAILABLE TIME SLOTS *</label><div class="slots" id="slots"></div><input type="hidden" id="time" required><p class="notice" id="slotMessage">Choose a date to view time slots.</p></div>
+<div class="field full"><label for="notes">NOTES (OPTIONAL)</label><textarea id="notes" rows="3" placeholder="Nail design, length or other details"></textarea></div>
+<div class="field full"><div class="total"><span>Selected service price</span><strong id="price">R—</strong></div></div>
+<div class="field full"><button class="pill" type="submit" style="width:100%;padding:15px">REQUEST VIA WHATSAPP ↗</button><p class="notice">This sends a booking request to 064 312 3054 only. Your appointment is not confirmed until the technician replies.</p></div>
+</div></form></div></div></section>
+
+<section class="section" id="gallery"><div class="wrap"><div class="section-heading"><div class="eyebrow">A little inspiration</div><h2>The Clawed By Brown look</h2><p>Soft neutrals, pretty details and your next favourite set.</p></div><div class="gallery"><img src="images/clawed-by-brown-menu.jpeg" alt="Clawed By Brown nail menu design"><img src="images/clawed-by-brown-photo-2.jpeg" alt="Additional uploaded Clawed By Brown inspiration"></div></div></section>
+<section class="contact" id="contact"><div class="eyebrow">Let's talk nails</div><h2>Book your set ♡</h2><p>WhatsApp us to request your appointment.</p><p><a href="https://wa.me/27643123054">064 312 3054</a></a></p><a class="pill" style="background:var(--pink);color:var(--deep)" href="https://wa.me/27643123054">CHAT ON WHATSAPP</a></section>
+</main>
+<footer>© <span id="year"></span> CLAWED BY BROWN · NAILS BY BROWN ♡</footer>
+<script>
+// EDIT AVAILABLE TIMES HERE. Use 24-hour time format. These are example slots.
+const availableTimes = ["09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00"];
+// Optional blocked dates: use YYYY-MM-DD, for example "2026-12-25".
+const blockedDates = [];
+const dateInput=document.getElementById('date'), slotsEl=document.getElementById('slots'), timeInput=document.getElementById('time'), messageEl=document.getElementById('slotMessage');
+const serviceInput=document.getElementById('service'), priceEl=document.getElementById('price');
+document.getElementById('year').textContent=new Date().getFullYear();
+dateInput.min=new Date().toLocaleDateString('en-CA');
+function renderSlots(){
+ slotsEl.innerHTML=''; timeInput.value='';
+ const date=dateInput.value;
+ if(!date){messageEl.textContent='Choose a date to view time slots.';return}
+ if(blockedDates.includes(date)){messageEl.textContent='The technician is unavailable on this date. Please choose another date.';return}
+ let count=0;
+ availableTimes.forEach(t=>{
+  const b=document.createElement('button');b.type='button';b.className='slot';b.textContent=t;
+  b.addEventListener('click',()=>{document.querySelectorAll('.slot').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');timeInput.value=t;messageEl.textContent='Selected: '+t;});
+  slotsEl.appendChild(b);count++;
+ });
+ messageEl.textContent=count+' example time slots shown. Your chosen time must be confirmed by the technician.';
+}
+dateInput.addEventListener('change',renderSlots);
+serviceInput.addEventListener('change',()=>{const o=serviceInput.options[serviceInput.selectedIndex];priceEl.textContent=o.dataset.price?'R'+o.dataset.price:'R—'});
+document.getElementById('bookingForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ if(!timeInput.value){messageEl.textContent='Please choose one of the available time slots.';return}
+ const date=dateInput.value, service=serviceInput.value, price=serviceInput.options[serviceInput.selectedIndex].dataset.price;
+ const msg=`Hi Clawed By Brown! I'd like to request an appointment.%0A%0AName: ${encodeURIComponent(document.getElementById('name').value)}%0AService: ${encodeURIComponent(service)}%0APrice: R${price}%0APreferred date: ${encodeURIComponent(date)}%0APreferred time: ${encodeURIComponent(timeInput.value)}%0ANotes: ${encodeURIComponent(document.getElementById('notes').value||'None')}%0A%0APlease let me know if this slot is available.`;
+ window.open('https://wa.me/27643123054?text='+msg,'_blank');
+});
+</script>
+</body></html>
